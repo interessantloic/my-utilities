@@ -9,6 +9,12 @@ Personal utilities, setup notes, and a Homebrew install list for setting up a ne
 | 工具 | 用途 | 安装方式 | 使用说明 |
 | --- | --- | --- | --- |
 | [Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight) | 在 Finder 中按空格预览 YAML、源码及部分无扩展名文本 | `brew install --cask syntax-highlight` | [安装与排查](docs/syntax-highlight.md) |
+| [KeyCastr](https://github.com/keycastr/keycastr) | 在录屏或演示时显示键盘按键 | `brew install --cask keycastr` | [首次设置](docs/personal-apps.md#keycastr) |
+| [Keka](https://www.keka.io/) | 压缩和解压文件 | `brew install --cask keka` | [首次设置](docs/personal-apps.md#keka) |
+| [Snipaste](https://www.snipaste.com/) | 截图与桌面贴图 | `brew install --cask snipaste` | [首次设置](docs/personal-apps.md#snipaste) |
+| [Paste](https://pasteapp.io/) | 剪贴板历史管理 | `brew install --cask paste` | [首次设置](docs/personal-apps.md#paste) |
+| [SyncClipboard](https://github.com/Jeric-X/SyncClipboard) | 跨设备剪贴板同步与历史记录 | 官方 Releases 手动安装 | [安装与配置](docs/personal-apps.md#syncclipboard) |
+| [Cockpit Tools](https://github.com/jlcodes99/cockpit-tools) | AI 工具多账号与配额管理 | 官方 tap，已加入 Brewfile | [安装与配置](docs/personal-apps.md#cockpit-tools) |
 
 ## 新 Mac 快速开始
 
@@ -20,7 +26,8 @@ Personal utilities, setup notes, and a Homebrew install list for setting up a ne
    brew bundle --file=Brewfile
    ```
 
-4. 按照[换机清单](docs/new-mac.md)完成首次启动、扩展启用和功能验证。
+4. 从官方 Releases 手动安装 SyncClipboard；它不包含在 Brewfile 的自动安装范围内。
+5. 按照[换机清单](docs/new-mac.md)完成首次启动、扩展启用和功能验证。
 
 `brew bundle` 会安装缺少的软件，并默认尝试升级已有软件。只想补齐缺少的软件时，使用 `brew bundle --file=Brewfile --no-upgrade`。此清单不锁定版本，也不恢复登录状态或应用配置。详见 [Homebrew Bundle 文档](https://docs.brew.sh/Brew-Bundle-and-Brewfile)。
 
@@ -33,6 +40,7 @@ my-utilities/
 ├── .gitignore                # 排除本机文件和常见敏感配置
 └── docs/
     ├── new-mac.md            # 换机检查清单
+    ├── personal-apps.md      # 个人小应用的安装与首次设置
     ├── syntax-highlight.md   # Finder 文本预览工具
     └── tool-template.md      # 新工具记录模板
 ```
