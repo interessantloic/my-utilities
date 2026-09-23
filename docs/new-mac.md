@@ -10,6 +10,14 @@
 
 ## 首次设置
 
+- [ ] 按[个人应用说明](personal-apps.md)手动安装 SyncClipboard。
+- [ ] KeyCastr：按系统提示允许输入监控，验证按键显示。
+- [ ] Keka：用测试压缩包确认压缩和解压正常。
+- [ ] Snipaste：允许截图所需权限，设置并测试截图、贴图快捷键。
+- [ ] Paste：完成账号／订阅恢复，测试非敏感文本的历史记录。
+- [ ] SyncClipboard：私下填写服务器与认证信息，用测试文本验证同步。
+- [ ] Cockpit Tools：按需重新登录所用服务，确认账号与配额显示。
+
 - [ ] 打开 Syntax Highlight 一次。
 - [ ] 在系统设置的 Quick Look（快速查看）扩展列表中启用 Syntax Highlight。
 - [ ] 在 Finder 中选中一个包含文本的 `.yaml` 文件，按空格确认能看到内容。
